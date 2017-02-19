@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="claudioshigemi.com.first.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/id_linearmenu"
+        >
+
+        <Button
+            android:text="Menu"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_menu"
+            />
+
+        <Button
+            android:text="Cardápio"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cardapio"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Pedido"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_pedido"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pizza"
+        android:id="@+id/img_pizza"
+        android:layout_below="@+id/id_linearmenu"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duda's Pizza"
+        android:layout_below="@id/id_linearmenu"
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="7dp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:text="A Dudas pizza chega em Maringá com a proposta de trazer qualidade aliada
+a sabores que proporcionem uma experiência única aos paladares mais exigentes.
+A Della Pizza dispõe de uma entrega ágil em domicílio, onde você pode pagar por suas pizzas com os principais cartões de crédito na comodidade do seu lar. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_pizza"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/txt_descricao"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:paddingRight="7dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/ic_action_location"
+                    android:paddingBottom="2dp"
+                    android:id="@+id/imageView2"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    app:srcCompat="@drawable/ic_action_phone_incoming"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Av Osires Stenghel Guimarães, 286"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" Maringá / PR CEP: 87.047-200"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(44) 3263 - 2969"
+                    android:paddingTop="9dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cidade"
+                    android:scaleType="centerCrop"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
